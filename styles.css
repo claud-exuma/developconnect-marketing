@@ -16,22 +16,52 @@ body {
     margin-bottom: 30px;
 }
 
+/* Toggle Buttons */
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background: #ccc;
+    color: black;
+    transition: background 0.3s;
+    border-radius: 5px;
+}
+
+.toggle-btn.active {
+    background: #1C2957;
+    color: white;
+}
+
 /* Container for Packages */
 .packages-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* Individual Package Styling */
 .package {
     background-color: white;
-    width: 280px;
+    width: 60%;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     text-align: left;
+    display: none; /* Hide by default */
+}
+
+/* Show Active Package */
+.package.active {
+    display: block;
 }
 
 /* Header */
