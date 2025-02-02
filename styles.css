@@ -7,21 +7,13 @@ body {
     text-align: center;
 }
 
-/* Title */
-.title {
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-}
-
 /* Toggle Buttons */
 .toggle-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .toggle-btn {
@@ -51,7 +43,8 @@ body {
 /* Individual Package Styling */
 .package {
     background-color: white;
-    width: 60%;
+    width: 90%;
+    max-width: 600px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     overflow: hidden;
