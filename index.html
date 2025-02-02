@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing Packages</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
     <h1 class="title">OFF-MARKETING STRATEGY</h1>
 
+    <!-- Toggle Buttons -->
+    <div class="toggle-buttons">
+        <button class="toggle-btn active" onclick="showPackage('package1')">Package 1</button>
+        <button class="toggle-btn" onclick="showPackage('package2')">Package 2</button>
+        <button class="toggle-btn" onclick="showPackage('package3')">Package 3</button>
+        <button class="toggle-btn" onclick="showPackage('package4')">Package 4</button>
+    </div>
+
+    <!-- Package Sections -->
     <div class="packages-container">
-        <div class="package">
+        <div id="package1" class="package active">
             <h2>Package 1</h2>
             <div class="package-content">
                 <h3>Branding & Digital</h3>
@@ -26,7 +36,7 @@
             <div class="package-total">Total: $3,999</div>
         </div>
 
-        <div class="package">
+        <div id="package2" class="package">
             <h2>Package 2</h2>
             <div class="package-content">
                 <h3>Marketing Strategy</h3>
@@ -41,7 +51,7 @@
             <div class="package-total">Total: $4,999</div>
         </div>
 
-        <div class="package">
+        <div id="package3" class="package">
             <h2>Package 3</h2>
             <div class="package-content">
                 <h3>Advanced Advertising</h3>
@@ -55,7 +65,7 @@
             <div class="package-total">Total: $7,999</div>
         </div>
 
-        <div class="package">
+        <div id="package4" class="package">
             <h2>Package 4</h2>
             <div class="package-content">
                 <h3>Premium Strategy</h3>
