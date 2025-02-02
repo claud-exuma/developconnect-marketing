@@ -1,50 +1,72 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F4F4;
+    margin: 0;
     padding: 20px;
+    text-align: center;
 }
 
-h1 {
-    color: #333;
+/* Title */
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
 }
 
-.toggle-buttons {
+/* Container for Packages */
+.packages-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.toggle-buttons button {
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    background: #ddd;
-    font-size: 16px;
-    margin: 5px;
-    transition: background 0.3s;
-}
-
-.toggle-buttons button.active {
-    background: black;
-    color: white;
-}
-
-.package-content {
-    max-width: 600px;
-    margin: 0 auto;
+/* Individual Package Styling */
+.package {
+    background-color: white;
+    width: 280px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
     text-align: left;
 }
 
-.package {
-    display: none;
+/* Header */
+.package h2 {
+    background-color: #1C2957;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
 }
 
-.package.active {
-    display: block;
-    animation: fadeIn 0.3s ease-in-out;
+/* Package Content */
+.package-content {
+    padding: 20px;
+    background-color: #EFEFEF;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.package-content h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1C2957;
+}
+
+.package-content p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+/* Price Box */
+.package-total {
+    background-color: #1C2957;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
