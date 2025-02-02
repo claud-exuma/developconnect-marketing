@@ -2,80 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Marketing Packages</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Toggle Buttons -->
-    <div class="toggle-buttons">
-        <button class="toggle-btn active" onclick="showPackage('package1')">Package 1</button>
-        <button class="toggle-btn" onclick="showPackage('package2')">Package 2</button>
-        <button class="toggle-btn" onclick="showPackage('package3')">Package 3</button>
-        <button class="toggle-btn" onclick="showPackage('package4')">Package 4</button>
-    </div>
+    <div class="container">
+        <div class="toggle-buttons">
+            <button class="active" onclick="showPackage('package1')">Package 1</button>
+            <button onclick="showPackage('package2')">Package 2</button>
+            <button onclick="showPackage('package3')">Package 3</button>
+            <button onclick="showPackage('package4')">Package 4</button>
+        </div>
 
-    <!-- Package Sections -->
-    <div class="packages-container">
         <div id="package1" class="package active">
-            <h2>Package 1</h2>
-            <div class="package-content">
-                <h3>Branding & Digital</h3>
-                <p>- Logo & Brand Identity</p>
-                <p>- Professional Website</p>
-                <p>- Social Media Setup</p>
-                <h3>Marketing Materials</h3>
-                <p>- Business Cards & Flyers</p>
-                <p>- Email Newsletter Templates</p>
-                <h3>Subtotal: $3,999</h3>
+            <div class="package-box">
+                <h2>Package 1</h2>
+                <div class="package-content">
+                    <h3>Branding & Digital</h3>
+                    <ul>
+                        <li>Logo & Brand Identity</li>
+                        <li>Professional Website</li>
+                        <li>Social Media Setup</li>
+                    </ul>
+                    <h3>Marketing Materials</h3>
+                    <ul>
+                        <li>Business Cards & Flyers</li>
+                        <li>Email Newsletter Templates</li>
+                    </ul>
+                    <h3>Subtotal: $3,999</h3>
+                </div>
             </div>
-            <div class="package-total">Total: $3,999</div>
         </div>
 
         <div id="package2" class="package">
-            <h2>Package 2</h2>
-            <div class="package-content">
-                <h3>Marketing Strategy</h3>
-                <p>- Competitor Analysis</p>
-                <p>- Google Ads & SEO</p>
-                <p>- Email Campaign Setup</p>
-                <h3>Development & Design</h3>
-                <p>- Custom Landing Pages</p>
-                <p>- Interactive Media (Videos, Animations)</p>
-                <h3>Subtotal: $4,999</h3>
+            <div class="package-box">
+                <h2>Package 2</h2>
+                <div class="package-content">
+                    <h3>Digital Marketing</h3>
+                    <ul>
+                        <li>SEO Optimization</li>
+                        <li>Google Ads Setup</li>
+                        <li>Content Marketing</li>
+                    </ul>
+                    <h3>Marketing Analytics</h3>
+                    <ul>
+                        <li>Traffic Monitoring</li>
+                        <li>Conversion Rate Optimization</li>
+                    </ul>
+                    <h3>Subtotal: $4,999</h3>
+                </div>
             </div>
-            <div class="package-total">Total: $4,999</div>
         </div>
 
         <div id="package3" class="package">
-            <h2>Package 3</h2>
-            <div class="package-content">
-                <h3>Advanced Advertising</h3>
-                <p>- Paid Social Campaigns</p>
-                <p>- Retargeting & Conversion Optimization</p>
-                <h3>Lead Nurturing</h3>
-                <p>- CRM Integration</p>
-                <p>- Automated Email Flows</p>
-                <h3>Subtotal: $7,999</h3>
+            <div class="package-box">
+                <h2>Package 3</h2>
+                <div class="package-content">
+                    <h3>Advanced Strategy</h3>
+                    <ul>
+                        <li>Multi-Channel Campaigns</li>
+                        <li>Influencer Partnerships</li>
+                        <li>Sales Funnel Optimization</li>
+                    </ul>
+                    <h3>Subtotal: $7,999</h3>
+                </div>
             </div>
-            <div class="package-total">Total: $7,999</div>
         </div>
 
         <div id="package4" class="package">
-            <h2>Package 4</h2>
-            <div class="package-content">
-                <h3>Premium Strategy</h3>
-                <p>- Full Marketing Team Support</p>
-                <p>- Dedicated Account Manager</p>
-                <h3>Complete Digital Ecosystem</h3>
-                <p>- Multi-Channel Ad Campaigns</p>
-                <p>- Advanced Data Analytics & Reporting</p>
-                <h3>Subtotal: $9,999</h3>
+            <div class="package-box">
+                <h2>Package 4</h2>
+                <div class="package-content">
+                    <h3>Full-Service Marketing</h3>
+                    <ul>
+                        <li>End-to-End Campaign Management</li>
+                        <li>TV & Radio Advertising</li>
+                        <li>Exclusive Partnerships</li>
+                    </ul>
+                    <h3>Subtotal: $9,999</h3>
+                </div>
             </div>
-            <div class="package-total">Total: $9,999</div>
         </div>
+
     </div>
 
 </body>
