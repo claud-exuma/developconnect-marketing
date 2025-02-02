@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #ddd;
+    font-size: 16px;
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+.toggle-buttons button.active {
+    background: black;
+    color: white;
+}
+
+.package-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.package {
+    display: none;
+}
+
+.package.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
